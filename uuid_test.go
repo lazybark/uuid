@@ -541,7 +541,7 @@ func TestRandomFromReader(t *testing.T) {
 	}
 }
 
-func TestVersion7FromCustomTime(t *testing.T) {
+func TestVersion7WithTime(t *testing.T) {
 	// Test with specific timestamp.
 	layout := "2006-01-02 15:04:05.000 -0700"
 
