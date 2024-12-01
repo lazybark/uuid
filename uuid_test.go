@@ -550,7 +550,7 @@ func TestVersion7FromCustomTime(t *testing.T) {
 		t.Fatalf("expected no error, got %v", err)
 	}
 
-	uuid, err := NewV7FromTime(ts)
+	uuid, err := NewV7WithTime(ts)
 	if err != nil {
 		t.Fatalf("expected no error, got %v", err)
 	}

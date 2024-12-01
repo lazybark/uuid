@@ -43,8 +43,8 @@ func NewV7FromReader(r io.Reader) (UUID, error) {
 	return uuid, nil
 }
 
-// NewV7FromTime returns a Version 7 UUID based on the provided time.
-func NewV7FromTime(t time.Time) (UUID, error) {
+// NewV7WithTime returns a Version 7 UUID based on the provided time.
+func NewV7WithTime(t time.Time) (UUID, error) {
 	uuid, err := NewRandom()
 	if err != nil {
 		return uuid, err
